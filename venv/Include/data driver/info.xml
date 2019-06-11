@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<info>
+    <base>
+        <platform>windows</platform>
+        <browser>Chorm</browser>
+        <url>http://www.baidu.com</url>
+        <login username="admin" passwd="1234"/>
+        <login username="guest" passwd="2342"/>
+    </base>
+    <test>
+        <province>北京</province>
+        <province>上海</province>
+        <city>西安</city>
+        <city>成都</city>
+    </test>
+</info>   
