@@ -23,4 +23,4 @@ except BaseException as msg:
     driver.get_screenshot_as_file('D:\\failed.png')
 finally:
     pass
-    # driver.quit()
+    driver.quit()
