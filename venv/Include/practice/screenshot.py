@@ -1,11 +1,15 @@
 from selenium import webdriver
 from time import sleep
 
-driver = webdriver.Chrome()
+option = webdriver.ChromeOptions()
+option.add_argument('headless')
+driver = webdriver.Chrome(chrome_options=option)
+
 driver.get('http://www.bilibili.com')
 first_window = driver.current_window_handle
 
 try:
+    driver.implicitly_wait(5)
     driver.find_element_by_xpath('//*[@id="banner_link"]/div/div/form/input').send_keys('测试')
     driver.find_element_by_xpath('//*[@id="banner_link"]/div/div/form/button').click()
     sleep(1)
