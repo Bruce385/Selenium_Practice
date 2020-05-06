@@ -39,7 +39,7 @@ att["Content-Type"] = "application/octet-stream"
 # 附件名称为中文时的写法
 att.add_header("Content-Disposition", "attachment", filename=("gbk", "", "测试结果.txt"))
 # 附件名称非中文时的写法
-# att["Content-Disposition"] = 'attachment; filename="test.html")'
+# att["Content-Disposition"] = 'attachment', filename=("test.html")
 msg.attach(att)
 
 smtp = smtplib.SMTP()
