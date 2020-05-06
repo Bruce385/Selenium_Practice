@@ -4,7 +4,7 @@ from time import sleep
 from selenium.webdriver.common.action_chains import ActionChains
 
 driver = webdriver.Chrome()
-driver.get("https://www.baidu.cn")
+driver.get("https://www.baidu.com")
 
 # 定位到要悬停的元素
 above = driver.find_element_by_link_text("设置")

@@ -2,7 +2,7 @@ from selenium import webdriver
 from time import sleep
 
 option = webdriver.ChromeOptions()
-#option.add_argument('headless')
+option.add_argument('headless')
 driver = webdriver.Chrome(chrome_options=option)
 
 # 参数数字为像素点
