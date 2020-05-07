@@ -5,12 +5,12 @@ import time
 from mailtest import MailTest
 
 # 定义测试用例的路径
-test_dir = "./TestCase"
-# discover = unittest.defaultTestLoader.discover(test_dir, pattern="test*.py")
-discover = unittest.defaultTestLoader.discover(".", pattern="Test*.py")
+test_dir = "./test_case"
+discover = unittest.defaultTestLoader.discover(test_dir, pattern="test*.py")
+# discover = unittest.defaultTestLoader.discover(".", pattern="Test*.py")
 
 if __name__ == '__main__':
-    report_dir = "./TestReport"  # 定义存放报告的路径
+    report_dir = "./test_report"  # 定义存放报告的路径
     now = time.strftime("%y-%m-%d %H_%M_%S")  # 对报告的时间命名格式化
     report_name = report_dir + '/' + now + "result.html"  # 报告文件的完整路径
 
